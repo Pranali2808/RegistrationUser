@@ -106,8 +106,30 @@ namespace UserRegistration
                 Console.WriteLine("invalid password");
             }
         }
+        public void NumericValue()
+        {
+            string numericpattern;
+            var regex = "^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9-+_!@#$%^&*.,?]{8,}$";
+            Console.WriteLine("Enter password minimum 8 characters with one numeric values");
+            string password = Console.ReadLine();
+            var match = Regex.Match(password, regex);
+            if (match.Success)
+            {
+                Console.WriteLine("Password valid");
+            }
+            else
+            {
+                Console.WriteLine("invalid password");
+            }
+        }
     }
 }
+
+
+
+
+        
+    
 
 
 
