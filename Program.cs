@@ -15,6 +15,7 @@ namespace UserRegistration
             first.First();
             first.LastName();
             first.EmailId();
+            first.PhoneNumber();
 
             Console.ReadLine();
         }
