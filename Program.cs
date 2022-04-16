@@ -13,6 +13,7 @@ namespace UserRegistration
             Console.WriteLine("Welcome to User registration problem");
             Name first = new Name();
             first.First();
+            first.LastName();
 
             Console.ReadLine();
         }
