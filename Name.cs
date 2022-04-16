@@ -90,6 +90,22 @@ namespace UserRegistration
                 Console.WriteLine("invalid password");
             }
         }
+        public void UpperCase()
+        {
+            string uppercasePattern;
+            var regex = @"^(?=.*[A-Z]).{8,}$";
+            Console.WriteLine("Enter password minimum 8 characters with one upper case");
+            string password = Console.ReadLine();
+            var match = Regex.Match(password, regex);
+            if (match.Success)
+            {
+                Console.WriteLine("Password valid");
+            }
+            else
+            {
+                Console.WriteLine("invalid password");
+            }
+        }
     }
 }
 

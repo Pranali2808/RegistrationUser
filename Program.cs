@@ -16,7 +16,8 @@ namespace UserRegistration
             //first.LastName();
             //first.EmailId();
             //first.PhoneNumber();
-            first.MinimumChar();
+           // first.MinimumChar();
+            first.UpperCase();
 
             Console.ReadLine();
         }
