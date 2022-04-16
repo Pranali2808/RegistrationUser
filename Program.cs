@@ -19,7 +19,8 @@ namespace UserRegistration
             // first.MinimumChar();
             //first.UpperCase();
             // first.NumericValue();
-            first.SpecialChar();
+            // first.SpecialChar();
+            first.SampleEmail();
 
             Console.ReadLine();
         }

@@ -138,6 +138,22 @@ namespace UserRegistration
                 Console.WriteLine("Invalid password");
             }
         }
+        public void SampleEmail()
+        {
+            string samplemail;
+            var regex = "^[a-zA-Z0-9]+([.+-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3})?$";
+            Console.WriteLine("Check the given sample valid or not");
+            string password = Console.ReadLine();
+            var match = Regex.Match(password, regex);
+            if (match.Success)
+            {
+                Console.WriteLine(" valid Email");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Email");
+            }
+        }
     }
 }
 
