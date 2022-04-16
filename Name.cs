@@ -122,8 +122,38 @@ namespace UserRegistration
                 Console.WriteLine("invalid password");
             }
         }
+        public void SpecialChar()
+        {
+            string specialcharpattern;
+            var regex = "^(?=.*[0-9])(?=.*[A-Z])(?=[^!@#$%&*+-.]*[!@#$%&*+-.][^!@#$%&*+-.]*$)[\\S]{8,}$";
+            Console.WriteLine("Enter password of minimum 8 character with one special character");
+            string password = Console.ReadLine();
+            var match = Regex.Match(password, regex);
+            if (match.Success)
+            {
+                Console.WriteLine("Password Valid ");
+            }
+            else
+            {
+                Console.WriteLine("Invalid password");
+            }
+        }
     }
 }
+
+        
+
+
+
+    
+
+
+
+
+
+       
+
+
 
 
 

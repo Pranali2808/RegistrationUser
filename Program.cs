@@ -18,7 +18,8 @@ namespace UserRegistration
             //first.PhoneNumber();
             // first.MinimumChar();
             //first.UpperCase();
-            first.NumericValue();
+            // first.NumericValue();
+            first.SpecialChar();
 
             Console.ReadLine();
         }
